@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite India Placement Services</title>
+    <!-- Font attached -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap attached -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index_style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar-heading">
+      <a class="navbar-brand" href="#top" id="navbar-logo"
+        ><img src="assets/EliteIndia.png" alt="Elite India" width="70px" /><span
+          id="navbar-logo-title"
+        >
+          Elite India</span
+        ></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar-contents"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-contents">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus-top">About Us </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whatwedo-top">What we do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whyus-top">Why Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#enquiryform-top">Connect with Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus-top">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id="home">
+      <div id="top"></div>
+      <!-- Section 1: Banner -->
+      <section
+        id="display-banner"
+        onmouseover="scaleup()"
+        onmouseout="scaledown()"
+      >
+        <div id="banner">
+          <p id="banner-title">GET HIRED FAST!</p>
+          <p id="banner-content">
+            REGISTER WITH US AND PAVE YOUR WAY TO A GREAT CAREER AHEAD
+          </p>
+        </div>
+      </section>
+      <script>
+        const scaleup = () => {
+          document.getElementById("banner-title").style.transform =
+            "scale(1.2)";
+          document.getElementById("banner-title").style.transitionProperty =
+            "transform";
+          document.getElementById("banner-title").style.transitionDuration =
+            "200ms";
+          document.getElementById("banner-content").style.transform =
+            "scale(1.2)";
+          document.getElementById("banner-content").style.transitionProperty =
+            "transform";
+          document.getElementById("banner-content").style.transitionDuration =
+            "200ms";
+        };
+        const scaledown = () => {
+          document.getElementById("banner-title").style.transform = "scale(1)";
+          document.getElementById("banner-title").style.transitionProperty =
+            "transform";
+          document.getElementById("banner-title").style.transitionDuration =
+            "200ms";
+          document.getElementById("banner-content").style.transform =
+            "scale(1)";
+          document.getElementById("banner-content").style.transitionProperty =
+            "transform";
+          document.getElementById("banner-content").style.transitionDuration =
+            "200ms";
+        };
+      </script>
+      <!-- Section 2: About Us -->
+      <div id="aboutus-top"></div>
+      <section id="about-us" onmouseover="autrans1()" onmouseout="autrans0()">
+        <div id="aboutus-content">
+          <div id="aboutus-img-text-container">
+            <div id="aboutus-img-text">
+              <h1 id="aboutus">About Us</h1>
+              <p>
+                Elite India is a leading staffing agency offering comprehensive
+                recruitment solutions, enabling our clients to select the right
+                employees for their needs. Our commitment and hard work have
+                made us one of the top agencies in India for quality placements
+                and job opportunities. We recognize that each client has unique
+                recruitment goals, so we take the time to understand their
+                specific manpower requirements and tailor a recruitment strategy
+                accordingly. This personalized approach is what makes us one of
+                the most reliable and trusted placement consultants in Pune.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        const autrans1 = () => {
+          document.getElementById("aboutus-img-text").style.backgroundColor =
+            "rgba(133, 133, 133, 0.450)";
+          document.getElementById("aboutus-img-text").style.backdropFilter =
+            "blur(5px)";
+          document.getElementById("aboutus-img-text").style.textShadow =
+            "0px 0px 5px rgb(0,0,0)";
+        };
+
+        const autrans0 = () => {
+          document.getElementById("aboutus-img-text").style = "none";
+        };
+      </script>
+      <!-- Section 3: What we do -->
+      <div id="whatwedo-top"></div>
+      <section id="whatwedo">
+        <h2 id="whatwedo-title">What do we do?</h2>
+        <div id="whatwedo-container">
+          <div
+            class="card"
+            onmouseover="cardtrans1()"
+            onmouseout="cardtrans0()"
+          >
+            <div class="card-title">
+              <h3 class="card-title-heading">We understand your requirement</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-body-content">
+                Being a top placement agencies in Pune, our efforts and non-stop
+                planning have allowed our clients to tap into some of the highly
+                talented pool of professionals in the country. We understand the
+                requirements and preferences of our clients first and only then
+                start our search for talents. That is why we deliver quick and
+                easy results. This is the once of the reason to be fastest
+                growing & best placement consultants in Pune
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            onmouseover="cardtrans1()"
+            onmouseout="cardtrans0()"
+          >
+            <div class="card-title">
+              <h3 class="card-title-heading">
+                We believe in long term relationships
+              </h3>
+            </div>
+            <div class="card-body">
+              <p class="card-body-content">
+                At Elite India, our job recruitment agency is committed to
+                building long-term relationships with our clients. This approach
+                ensures mutual benefits and shared growth over the years. By
+                working together, we aim to reach new milestones and achieve
+                shared objectives alongside our clients and customers.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            onmouseover="cardtrans1()"
+            onmouseout="cardtrans0()"
+          >
+            <div class="card-title">
+              <h3 class="card-title-heading">Extensive database</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-body-content">
+                In addition to our extensive online database, we leverage
+                referrals, associations, and social networking strategies to
+                source top profiles. Our headhunting efforts and advertisements
+                are precise and in line with current industry standards. With
+                our high-quality database, companies can easily find the most
+                suitable candidates for their job openings.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            onmouseover="cardtrans1()"
+            onmouseout="cardtrans0()"
+          >
+            <div class="card-title">
+              <h3 class="card-title-heading">We have experts to help you</h3>
+            </div>
+            <div class="card-body">
+              <p class="card-body-content">
+                As one of the leading HR consultancies in Pune, we consistently
+                provide reliable expertise to our clients. We never compromise
+                on the quality of our services or the effort we put in. Our goal
+                is to meet and exceed client expectations, all under the
+                guidance of experienced professionals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        const cardtrans1 = () => {
+          const element = document.getElementsByClassName("card");
+          for (let i = 0; i < element.length; i++) {
+            element[i].style.backgroundColor = "rgba(255, 255, 255, 0.753)";
+            element[i].style.transform = "scale(1.05)";
+            element[i].style.transitionProperty = "transform, background-color";
+            element[i].style.transitionDuration = "600ms";
+          }
+        };
+        const cardtrans0 = () => {
+          const element = document.getElementsByClassName("card");
+          for (let i = 0; i < element.length; i++) {
+            element[i].style.backgroundColor = "rgba(255, 255, 255, 0.351)";
+            element[i].style.transform = "scale(1)";
+            element[i].style.transitionProperty = "transform,background-color";
+            element[i].style.transitionDuration = "800ms";
+          }
+        };
+      </script>
+      <!-- Section 4: Scrolling images -->
+      <div id="scroll-container1">
+        <div class="scrolling-images right-to-left">
+          <img src="assets/companies/indus.png" alt="Image 3" />
+          <img src="assets/companies/google.webp" alt="Image 2" />
+          <img src="assets/companies/tcs.png" alt="Image 5" />
+          <img src="assets/companies/kpit.png" alt="Image 9" />
+          <img src="assets/companies/afour.png" alt="Image 6" />
+          <img src="assets/companies/cognizant.png" alt="Image 1" />
+          <img src="assets/companies/allscripts.png" alt="Image 7" />
+          <img src="assets/companies/HCL-Logo-1976.png" alt="Img 8" />
+          <img src="assets/companies/microsoft.jpg" alt="Image 4" />
+          <img
+            src="assets/companies/softdel-colored-new-logo.png"
+            alt="Image 11"
+          />
+          <img src="assets/companies/Zensar.png" alt="Image 14" />
+          <img src="assets/companies/syntel-logo.png" alt="Image 13" />
+          <img src="assets/companies/Symantec.png" alt="Image 12" />
+          <img src="assets/companies/simplifyhealthcare.png" alt="Image 10" />
+          <!-- Duplicate images for seamless scroll -->
+          <img src="assets/companies/microsoft.jpg" alt="Image 4" />
+          <img src="assets/companies/cognizant.png" alt="Image 1" />
+          <img src="assets/companies/google.webp" alt="Image 2" />
+          <img src="assets/companies/HCL-Logo-1976.png" alt="Img 8" />
+          <img src="assets/companies/afour.png" alt="Image 6" />
+          <img src="assets/companies/allscripts.png" alt="Image 7" />
+          <img src="assets/companies/kpit.png" alt="Image 9" />
+          <img src="assets/companies/tcs.png" alt="Image 5" />
+          <img src="assets/companies/simplifyhealthcare.png" alt="Image 10" />
+          <img
+            src="assets/companies/softdel-colored-new-logo.png"
+            alt="Image 11"
+          />
+          <img src="assets/companies/Symantec.png" alt="Image 12" />
+          <img src="assets/companies/indus.png" alt="Image 3" />
+          <img src="assets/companies/syntel-logo.png" alt="Image 13" />
+          <img src="assets/companies/Zensar.png" alt="Image 14" />
+        </div>
+      </div>
+      <div id="scroll-container2">
+        <div class="scrolling-images left-to-right">
+          <img src="assets/companies/cognizant.png" alt="Image 1" />
+          <img src="assets/companies/google.webp" alt="Image 2" />
+          <img src="assets/companies/indus.png" alt="Image 3" />
+          <img src="assets/companies/microsoft.jpg" alt="Image 4" />
+          <img src="assets/companies/tcs.png" alt="Image 5" />
+          <img src="assets/companies/afour.png" alt="Image 6" />
+          <img src="assets/companies/allscripts.png" alt="Image 7" />
+          <img src="assets/companies/HCL-Logo-1976.png" alt="Img 8" />
+          <img src="assets/companies/kpit.png" alt="Image 9" />
+          <img src="assets/companies/simplifyhealthcare.png" alt="Image 10" />
+          <img
+            src="assets/companies/softdel-colored-new-logo.png"
+            alt="Image 11"
+          />
+          <img src="assets/companies/Symantec.png" alt="Image 12" />
+          <img src="assets/companies/syntel-logo.png" alt="Image 13" />
+          <img src="assets/companies/Zensar.png" alt="Image 14" />
+          <!-- Duplicate images for seamless scroll -->
+          <img src="assets/companies/cognizant.png" alt="Image 1" />
+          <img src="assets/companies/google.webp" alt="Image 2" />
+          <img src="assets/companies/indus.png" alt="Image 3" />
+          <img src="assets/companies/microsoft.jpg" alt="Image 4" />
+          <img src="assets/companies/tcs.png" alt="Image 5" />
+          <img src="assets/companies/afour.png" alt="Image 6" />
+          <img src="assets/companies/allscripts.png" alt="Image 7" />
+          <img src="assets/companies/HCL-Logo-1976.png" alt="Img 8" />
+          <img src="assets/companies/kpit.png" alt="Image 9" />
+          <img src="assets/companies/simplifyhealthcare.png" alt="Image 10" />
+          <img
+            src="assets/companies/softdel-colored-new-logo.png"
+            alt="Image 11"
+          />
+          <img src="assets/companies/Symantec.png" alt="Image 12" />
+          <img src="assets/companies/syntel-logo.png" alt="Image 13" />
+          <img src="assets/companies/Zensar.png" alt="Image 14" />
+        </div>
+      </div>
+      <div id="scroll-container3">
+        <div class="scrolling-images right-to-left">
+          <img src="assets/companies/kpit.png" alt="Image 9" />
+          <img src="assets/companies/cognizant.png" alt="Image 1" />
+          <img src="assets/companies/indus.png" alt="Image 3" />
+          <img src="assets/companies/microsoft.jpg" alt="Image 4" />
+          <img src="assets/companies/Zensar.png" alt="Image 14" />
+          <img src="assets/companies/allscripts.png" alt="Image 7" />
+          <img src="assets/companies/HCL-Logo-1976.png" alt="Img 8" />
+          <img src="assets/companies/tcs.png" alt="Image 5" />
+          <img src="assets/companies/simplifyhealthcare.png" alt="Image 10" />
+          <img src="assets/companies/syntel-logo.png" alt="Image 13" />
+          <img
+            src="assets/companies/softdel-colored-new-logo.png"
+            alt="Image 11"
+          />
+          <img src="assets/companies/afour.png" alt="Image 6" />
+          <img src="assets/companies/Symantec.png" alt="Image 12" />
+          <img src="assets/companies/google.webp" alt="Image 2" />
+          <!-- Duplicate images for seamless scroll -->
+          <img src="assets/companies/cognizant.png" alt="Image 1" />
+          <img src="assets/companies/google.webp" alt="Image 2" />
+          <img src="assets/companies/indus.png" alt="Image 3" />
+          <img src="assets/companies/microsoft.jpg" alt="Image 4" />
+          <img src="assets/companies/tcs.png" alt="Image 5" />
+          <img src="assets/companies/afour.png" alt="Image 6" />
+          <img src="assets/companies/allscripts.png" alt="Image 7" />
+          <img src="assets/companies/HCL-Logo-1976.png" alt="Img 8" />
+          <img src="assets/companies/kpit.png" alt="Image 9" />
+          <img src="assets/companies/simplifyhealthcare.png" alt="Image 10" />
+          <img
+            src="assets/companies/softdel-colored-new-logo.png"
+            alt="Image 11"
+          />
+          <img src="assets/companies/Symantec.png" alt="Image 12" />
+          <img src="assets/companies/syntel-logo.png" alt="Image 13" />
+          <img src="assets/companies/Zensar.png" alt="Image 14" />
+        </div>
+      </div>
+
+      <!-- Section 5: Why us -->
+      <div id="whyus-top"></div>
+      <section id="whyus">
+        <h2 id="whyus-head">Why opt for us?</h2>
+        <h3 id="whyus-title">We believe in...</h3>
+        <div id="whyus-content">
+          <div class="whyus-data">
+            <h2>Right candidate for right role</h2>
+
+            <p>
+              At Elite India, we specialize in connecting the right talent with
+              the right opportunities. As a leading placement consultancy, we
+              take the time to understand your unique hiring needs and carefully
+              match them with candidates who not only have the right skills but
+              are also a perfect fit for your company culture. Our tailored
+              approach ensures that every hire adds real value to your
+              organization. Whether you're looking for top-tier professionals or
+              specialized talent, we make the recruitment process seamless and
+              efficient, delivering the best candidates for the best results.
+            </p>
+          </div>
+          <div class="whyus-data">
+            <h2>Right opportunity for right talent</h2>
+            <p>
+              At Elite India, we believe that every talented professional
+              deserves the right opportunity to shine. As a trusted placement
+              consultancy, we are committed to helping you find a job that
+              perfectly aligns with your skills, experience, and career goals.
+              Our extensive network of top employers ensures that we connect you
+              with roles that not only match your qualifications but also offer
+              a promising path for growth and success. Let us guide you to the
+              right opportunity where your talent can truly thrive.
+            </p>
+          </div>
+          <div class="whyus-data">
+            <h2>Right candidate for right role</h2>
+            <p>
+              At Elite India, we understand that timing is everything when it
+              comes to your career. Our placement consultancy is dedicated to
+              finding the perfect job for you, just when you need it. With a
+              deep understanding of the job market and a vast network of
+              employers, we ensure that you're matched with the right
+              opportunity at the right time. Whether you're looking for your
+              next big career move or a role that aligns with your skills and
+              aspirations, we’re here to make it happen—swiftly and seamlessly.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section 6: Enquiry form -->
+      <div id="enquiryform-top"></div>
+      <section id="enquiryform">
+        <h2>Connect with us</h2>
+        <p class="h3">Your search will meet destination here</p>
+        <div id="form-body">
+          <form>
+            <table>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    id="fullname"
+                    name="fullname"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    placeholder="Phone Number"
+                    id="phone"
+                    name="phone"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="mail" placeholder="Mail ID" name="mailid" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select name="education" id="qualification">
+                    <option value="null">Select your qualification</option>
+                    <option value="masters">Masters</option>
+                    <option value="pgdip">Post Graduate Diploma</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="diploma">Diploma</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" placeholder="Enter branch" name="branch" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label><p>Upload CV</p></label>
+                  <input type="file" name="resume" />(*upload only in pdf
+                  format)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; justify-content: space-evenly">
+                    <input type="submit" class="btn btn-primary" />
+                    <input type="reset" class="btn btn-danger" />
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </section>
+      <!-- Section 7: Contact Section -->
+      <div id="contactus-top"></div>
+      <footer id="contactus">
+        <div id="contactus-contents">
+          <div id="contactus-address">
+            <h2>Elite India Placements</h2>
+            <address>
+              <p>
+                2nd Floor, Vinayak Bunglow, Nirzer Society, S No 19-1B, Gulawani
+                Maharaj Road, near Rahi Cafe, Kothrud, Pune, Maharashtra 411038
+              </p>
+            </address>
+          </div>
+          <div id="contactus-social">
+            <div id="social-title">
+              <p>Find us on</p>
+            </div>
+            <div id="social-logos">
+              <a href="">
+                <img
+                  src="assets/facebook.jpg"
+                  alt=""
+                  class="img-thumbnail logos"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="assets/twitter.webp"
+                  alt=""
+                  class="img-thumbnail logos"
+              /></a>
+              <a href="">
+                <img
+                  src="assets/instagram.jpg"
+                  alt=""
+                  class="img-thumbnail logos"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="assets/whatsapp.jpg"
+                  alt=""
+                  class="img-thumbnail logos"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="assets/threads.png"
+                  alt=""
+                  class="img-thumbnail logos"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- ******************************************************************************** -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

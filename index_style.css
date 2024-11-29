@@ -1,0 +1,444 @@
+body {
+  background-image: url(assets/index-bg.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#top {
+  width: 100%;
+  height: 70px;
+}
+
+/* Navbar styling */
+#navbar-heading {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.753);
+  box-shadow: 0px 3px 10px 0px gray;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+#navbar-logo {
+  width: 30%;
+  font-family: Roboto;
+}
+#navbar-logo img:hover {
+  box-shadow: 0px 0px 5px 5px white;
+}
+#navbar-logo span:hover {
+  text-shadow: 0px 0px 5px white;
+}
+
+#navbar-logo img {
+  object-fit: contain;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+}
+#navbar-logo-title {
+  font-weight: bold;
+  font-family: Oswald;
+  font-size: 25px;
+}
+
+#navbar-contents {
+  font-family: Roboto;
+  font-weight: 600;
+}
+
+#navbar-contents ul {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+/* Display Banner styling */
+#display-banner {
+  transition-property: transform;
+  transition-duration: 200ms;
+}
+#banner {
+  background: radial-gradient(
+    circle,
+    rgb(212, 212, 212),
+    rgba(72, 72, 72, 0.731)
+  );
+  backdrop-filter: blur(2px);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.493);
+  border-radius: 20px;
+  margin: auto;
+}
+#banner-title {
+  font-family: Josefin Sans;
+  font-size: 50px;
+  width: 50%;
+  margin: auto;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+#banner-content {
+  font-family: Josefin Sans;
+  width: 70%;
+  margin: auto;
+}
+/* About Us styling */
+
+#about-us {
+  margin: 20px auto;
+}
+
+#aboutus-content {
+  width: 100%;
+  background-image: url(assets/aboutus-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+#aboutus-img-text {
+  font-family: Dosis;
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  /* margin: auto; */
+  color: rgb(255, 255, 255);
+  background-color: rgba(133, 133, 133, 0.12);
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  transition-property: background-color backdrop-filter text-shadow;
+  transition-duration: 400ms;
+}
+#aboutus-img-text p {
+  font-size: large;
+}
+/* What we do styling */
+#whatwedo {
+  background: url(assets/ourpurpose4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+#whatwedo-title {
+  text-align: center;
+  margin: 10px;
+  color: whitesmoke;
+  font-family: Dosis;
+  font-size: 45px;
+  letter-spacing: 4px;
+  text-shadow: 0px 0px 5px rgb(147, 147, 147);
+}
+#whatwedo-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.card {
+  width: 40%;
+  height: 380px;
+  padding: 20px;
+  margin: 10px;
+  text-align: justify;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.598);
+  backdrop-filter: blur(2px);
+  overflow: auto;
+}
+
+.card-title h3 {
+  margin: 0px;
+  text-align: center;
+  font-family: DM Sans;
+  text-shadow: 0px 0px 5px white;
+}
+.card-body p {
+  margin: 0px;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  text-shadow: 0px 0px 8px white;
+}
+/* Scrolling images styling */
+/* Container for the scrolling effect */
+#scroll-container1,
+#scroll-container2,
+#scroll-container3 {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px 0;
+  margin: 0px;
+  border-radius: 8px;
+}
+#scroll-container1 {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#scroll-container2 {
+  border-radius: 0px;
+}
+#scroll-container3 {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-bottom: 20px;
+}
+
+/* The scrolling container */
+.scrolling-images {
+  display: flex;
+  width: max-content;
+}
+
+.scrolling-images img {
+  width: 200px; /* Adjust image width */
+  height: 80px;
+  margin: 0 10px; /* Space between images */
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Keyframes to animate the scrolling right-to-left */
+@keyframes scroll-right-to-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Keyframes to animate the scrolling left-to-right */
+@keyframes scroll-left-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Right-to-left scrolling (container 1) */
+.right-to-left {
+  animation: scroll-right-to-left 50s linear infinite;
+}
+
+/* Left-to-right scrolling (container 2) */
+.left-to-right {
+  animation: scroll-left-to-right 45s linear infinite;
+}
+/* Why us styling */
+#whyus {
+  background-color: rgba(128, 128, 128, 0.674);
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+#whyus-head {
+  color: white;
+  height: 70px;
+  text-align: center;
+  font-family: DM Sans;
+  transition-property: letter-spacing;
+  transition-duration: 600ms;
+}
+
+#whyus-head:hover {
+  letter-spacing: 8px;
+}
+
+#whyus h2 {
+  color: white;
+  text-align: center;
+  font-family: DM Sans;
+}
+
+#whyus p {
+  color: white;
+  text-align: justify;
+  font-family: Roboto;
+}
+#whyus-title {
+  color: rgba(255, 255, 255, 0.821);
+  height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 700;
+  transition-property: letter-spacing text-shadow;
+  transition-duration: 600ms;
+}
+#whyus-title:hover {
+  letter-spacing: 8px;
+  text-shadow: 0px 0px 5px rgb(248, 228, 255), 0px 0px 10px rgb(143, 143, 143),
+    0px 0px 15px rgb(94, 94, 94);
+}
+#whyus-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.whyus-data {
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 45%;
+  height: 350px;
+  margin: 20px;
+  padding: 15px;
+  transition-property: background-color transform;
+  transition-duration: 500ms;
+}
+.whyus-data:hover {
+  background-color: rgba(245, 245, 245, 0.304);
+  transform: scale(1.1);
+}
+/* Enquiry form styling */
+/* Styling for the entire section */
+#enquiryform {
+  background-color: rgba(249, 249, 249, 0.352);
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+#enquiryform h2 {
+  text-align: center;
+  font-family: Dosis;
+  font-size: 45px;
+  color: whitesmoke;
+}
+#enquiryform p {
+  text-align: center;
+  font-family: Dosis;
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+#form-body {
+  width: 50%;
+  padding: 20px;
+  margin: 20px auto;
+  transition-property: background-color;
+  transition-duration: 500ms;
+}
+#form-body:hover {
+  background-color: rgba(249, 249, 249, 0.452);
+}
+
+/* Table styling to make form fields aligned */
+#form-body table {
+  width: 100%;
+  border-spacing: 10px;
+}
+
+/* Input fields styling */
+#form-body input[type="text"],
+#form-body input[type="number"],
+#form-body input[type="mail"],
+#form-body input[type="file"],
+#form-body select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Placeholder text color */
+#form-body input::placeholder {
+  color: #999;
+}
+
+/* Select dropdown styling */
+#form-body select {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Label and file input styling */
+#form-body label p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Button styling */
+#form-body .btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Table row styling for spacing between form elements */
+#form-body tr {
+  margin-bottom: 15px;
+}
+
+/* Contact Us styling */
+#contactus {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.342);
+  /* padding: 5px 25px 5px 25px; */
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+#contactus-contents {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+#contactus-address {
+  width: 25%;
+  font-family: Oswald;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0px 0px 5px rgb(23, 23, 23);
+}
+#contactus-address h2 {
+  margin: 0px;
+}
+#contactus-address p {
+  margin: 0px;
+}
+#contactus-social {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+#contactus-social p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0px 0px 5px rgb(78, 78, 79);
+}
+#social-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.logos {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
